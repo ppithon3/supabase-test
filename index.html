@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Supabase Test</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <section class="card">
+      <h1>Test Supabase</h1>
+      <p>Remplis les deux champs puis envoie pour stocker dans Supabase.</p>
+
+      <form id="entry-form">
+        <label>
+          Titre
+          <input type="text" id="title" placeholder="Titre" required />
+        </label>
+
+        <label>
+          Description
+          <textarea id="description" placeholder="Description" required></textarea>
+        </label>
+
+        <button type="submit">Envoyer</button>
+      </form>
+
+      <div id="status" class="status"></div>
+    </section>
+
+    <section class="card">
+      <h2>Liste des entrées</h2>
+      <div id="items" class="items"></div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="script.js"></script>
+</body>
+</html>
